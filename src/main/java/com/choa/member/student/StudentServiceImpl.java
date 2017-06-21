@@ -16,7 +16,7 @@ public class StudentServiceImpl implements MemberService{
 	@Override
 	public int memberJoin(MemberDTO memberDTO) throws Exception {
 		// TODO Auto-generated method stub
-		return 0;
+		return studentDAOImpl.memberJoin(memberDTO);
 	}
 	
 }
