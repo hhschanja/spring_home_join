@@ -5,7 +5,7 @@
   
   <mapper namespace="StudentMapper">
   		<insert id="studentJoin" parameterType="com.choa.member.student.StudentDTO">
-  			insert into student values(#{sid},#{phone},#{tid})
+  			insert into student values(#{id},#{phone},#{tid})
   		</insert>
   
   </mapper>

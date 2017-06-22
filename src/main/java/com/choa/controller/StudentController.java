@@ -1,6 +1,7 @@
 package com.choa.controller;
 
 import javax.inject.Inject;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,15 +18,10 @@ public class StudentController {
 	@Inject
 	private StudentServiceImpl studentServiceImpl;
 	
-	@RequestMapping(value="memberJoin")
-	public void memberJoin(){
-		
-	}
-	
 	@RequestMapping(value="studentJoin",method=RequestMethod.POST)
-	public String studentJoin(StudentDTO studentDTO, Model model) throws Exception{
+	public String studentJoin(StudentDTO studentDTO, Model model,HttpSession session) throws Exception{
 		
-		int result = studentServiceImpl.memberJoin(studentDTO);
+		int result = studentServiceImpl.memberJoin(studentDTO,session);
 
 		String message = "실패";
 		if(result>0){

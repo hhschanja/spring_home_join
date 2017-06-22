@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="./fireUpload" method="post" enctype="multipart/form-data">
+<form action="./fileUpload" method="post" enctype="multipart/form-data">
 <input type="text" name="name">
 <input type="file" name="f1">
 <button>헬로우</button>

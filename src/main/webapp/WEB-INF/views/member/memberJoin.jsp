@@ -43,15 +43,18 @@ $(function() {
 <p>비밀번호:<input type="text" name="pw"></p>
 <p>이름:<input type="text" name="name"></p>
 <p>나이:<input type="number" name="age"></p>
-<p><input type="file" name="filename"></p>
+<p>사진등록: <input type="file" name="mf"></p>
+
+<hr>
 
 <div>
-<p>sid<input type="text" name="sid">
 <p>전화번호:<input type="text" name="phone">
 <p>tid:<input type="text" name="tid">
 
-<p>tid:<input type="text" name="tid">
+<hr>
+
 <p>과목:<input type="text" name="subject">
+
 </div>
 
 <button id="btn">버튼</button>
