@@ -7,7 +7,21 @@ public class MemberDTO {
 	private String name;
 	private Integer age;
 	private String grade;
+	private String filename;
+	private String oriname;
 	
+	public String getFilename() {
+		return filename;
+	}
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
+	public String getOriname() {
+		return oriname;
+	}
+	public void setOriname(String oriname) {
+		this.oriname = oriname;
+	}
 	public String getId() {
 		return id;
 	}

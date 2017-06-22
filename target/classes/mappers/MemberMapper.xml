@@ -5,6 +5,6 @@
   
   <mapper namespace="MemberMapper">
  		<insert id="memberJoin" parameterType="com.choa.member.MemberDTO">
- 			insert into member values(#{id},#{pw},#{age},#{grade},#{name})
+ 			insert into member values(#{id},#{pw},#{age},#{grade},#{name},#{filename},#{oriname})
  		</insert>
   </mapper>
