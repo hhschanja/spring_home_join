@@ -36,7 +36,7 @@ $(function() {
 </head>
 <body>
 
-<form action="" id="frm">
+<form action="" id="frm" method="post">
 <p>ID: <input type="text" name="id"></p>
 <p>PW: <input type="text" name="pw"></p>
 <p>학생<input type="radio" class="grade" name="grade" value="student" checked="checked"></p>

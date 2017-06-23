@@ -8,4 +8,7 @@
   			insert into student values(#{id},#{phone},#{tid})
   		</insert>
   
+  		<select id="studentLogin" parameterType="com.choa.member.MemberDTO" resultType="com.choa.member.student.StudentDTO">
+  		select M.AGE,M.FILENAME,M.GRADE,M.ID,M.NAME,M.ORINAME,M.PW,S.PHONE,S.TID from member M, student S where id=#{id} and pw=#{pw} and M.id=S.sid
+  		</select>
   </mapper>

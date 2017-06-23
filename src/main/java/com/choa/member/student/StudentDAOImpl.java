@@ -29,4 +29,10 @@ public class StudentDAOImpl implements MemberDAO{
 		
 		return result;
 	}
+	
+	@Override
+	public MemberDTO memberLogin(MemberDTO memberDTO) throws Exception {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne(NAMESPACE2+"studentLogin", memberDTO);
+	}
 }

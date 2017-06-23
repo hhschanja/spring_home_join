@@ -7,5 +7,8 @@
   		<insert id="teacherJoin" parameterType="com.choa.member.teacher.TeacherDTO">
   			insert into teacher values(#{id},#{subject},sysdate)
   		</insert>
-  
+  	
+  		<select id="teacherLogin" parameterType="com.choa.member.MemberDTO" resultType="com.choa.member.teacher.TeacherDTO">
+  		select M.AGE,M.FILENAME,M.GRADE,M.ID,M.NAME,M.ORINAME,M.PW,T.HIREDATE,T.SUBJECT from member M, teacher T where id=#{id} and pw=#{pw} and M.id=T.tid
+  		</select>
   </mapper>

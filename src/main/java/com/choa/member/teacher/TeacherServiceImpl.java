@@ -29,4 +29,10 @@ public class TeacherServiceImpl implements MemberService{
 		
 		return teacherDAOImpl.memberJoin(memberDTO);
 	}
+	
+	@Override
+	public MemberDTO memberLogin(MemberDTO memberDTO, HttpSession session) throws Exception {
+		// TODO Auto-generated method stub
+		return teacherDAOImpl.memberLogin(memberDTO);
+	}
 }

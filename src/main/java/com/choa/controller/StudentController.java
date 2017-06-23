@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.choa.member.MemberDTO;
 import com.choa.member.student.StudentDTO;
 import com.choa.member.student.StudentServiceImpl;
 
@@ -31,6 +32,18 @@ public class StudentController {
 		model.addAttribute("message", message).addAttribute("path", "../");
 		
 		return "common/result";
+	}
+	
+	@RequestMapping(value="studentLogin",method=RequestMethod.POST)
+	public String studentLogin(MemberDTO memberDTO, HttpSession session) throws Exception{
+		MemberDTO memberDTO2 = studentServiceImpl.memberLogin(memberDTO, session);
+		
+		if(memberDTO2!=null){
+			session.setAttribute("member", memberDTO2);
+		}
+		
+		return "redirect:/";
+		
 	}
 	
 }
