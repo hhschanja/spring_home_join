@@ -14,6 +14,7 @@
 <p>${member.name}</p>
 <p>${member.age}</p>
 <p>${member.grade}</p>
+<p><img style="width:200; height: 200px;" alt="" src="../resources/upload/${member.filename}"></p>
 
 <c:if test="${member.grade=='student'}">
 <p>${member.phone}</p>
