@@ -22,7 +22,7 @@
 </c:otherwise>
 </c:choose>
 
-
+<h1><a href="./member/memberTest">ONLY TEACHER</a></h1>
 
 </body>
 </html>

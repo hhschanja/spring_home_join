@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value="/member/**")
 public class MemberController {
 
+	@RequestMapping(value="memberTest")
+	public void memberTest(){
+		
+	}
 	
 	@RequestMapping(value="memberJoin")
 	public void memberJoin(){
@@ -31,5 +35,7 @@ public class MemberController {
 		
 		return "redirect:/";
 	}
+	
+
 	
 }
