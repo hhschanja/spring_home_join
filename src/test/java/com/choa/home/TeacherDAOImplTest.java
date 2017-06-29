@@ -38,7 +38,6 @@ public class TeacherDAOImplTest extends MyAbstract{
 		teacherDTO.setAge(30);
 		teacherDTO.setGrade(data);
 		teacherDTO.setSubject(data);
-		teacherDTO.setTid(data);
 	}
 	
 }

@@ -39,7 +39,6 @@ public class StudentDAOImplTest extends MyAbstract{
 		studentDTO.setAge(30);
 		studentDTO.setGrade(data);
 		studentDTO.setPhone(data);
-		studentDTO.setSid(data);
 		studentDTO.setTid(data);
 		
 	}

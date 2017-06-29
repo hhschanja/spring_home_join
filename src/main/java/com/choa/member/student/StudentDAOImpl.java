@@ -4,6 +4,7 @@ import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.choa.member.MemberDAO;
 import com.choa.member.MemberDTO;
@@ -16,7 +17,9 @@ public class StudentDAOImpl implements MemberDAO{
 	private final String NAMESPACE="MemberMapper.";
 	private final String NAMESPACE2="StudentMapper.";
 	
+	
 	@Override
+	@Transactional
 	public int memberJoin(MemberDTO memberDTO) throws Exception {
 		int result = 0;
 		

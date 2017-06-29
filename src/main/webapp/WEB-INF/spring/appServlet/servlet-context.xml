@@ -23,7 +23,13 @@
 	
 	<context:component-scan base-package="com.choa.home" />
 	<context:component-scan base-package="com.choa.controller" />
+	<context:component-scan base-package="com.choa.member.student"></context:component-scan>
+	<context:component-scan base-package="com.choa.member.teacher"></context:component-scan>
 	
+	<!-- student랑 teacher scan할때 exclude controller 해주면 돼 안돼나요?  -->
+	<!-- Access가 안됩니다.. -->
+	<!-- SQLSESSION 메소드는 트랜잭션에 포함이 안되나  -->	
+
 	<beans:bean class="com.choa.util.Access" id="access"></beans:bean>
 	
 	<interceptors>
